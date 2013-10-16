@@ -26,6 +26,9 @@ slist_node* slist::pop() {
   head_.next = node->next;
   return node;
 }
+void slist::reverse() {
+  head_.next = ::reverse_slist(head_.next, &head_);
+}
 int slist::print_slist(const slist_node* node) {
   static int count = 0;
   if (count == 10) {

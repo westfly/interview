@@ -8,11 +8,9 @@ int main(int argc, char * argv[]) {
     list.push(node);
   }
   list.print();
-/*
   printf("before\n");
   list.reverse();
   list.print();
   printf("while\n");
-*/
   return 0;
 }

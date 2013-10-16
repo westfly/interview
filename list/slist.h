@@ -7,6 +7,7 @@ struct slist {
   ~slist();
   void push(slist_node* node);
   slist_node* pop();
+  void reverse(); 
   void print();
   static int print_slist(const slist_node* node);
   size_t size();
